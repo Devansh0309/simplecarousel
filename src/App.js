@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     // console.log("hello3", images, currentIndex);
     doClick();
-  }, [images, currentIndex]);
+  }, [currentIndex]);
 
   const changeImagesRef = (x) => {
     // console.log("inside changeImages", currentIndex + x);
