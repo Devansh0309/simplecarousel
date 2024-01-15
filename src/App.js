@@ -19,7 +19,7 @@ function App() {
   };
 
   useEffect(() => {
-    // console.log("hello3", images, currentIndex);
+    // console.log("inside useEffect", images, currentIndex);
     doClick();
   }, [currentIndex]);
 
@@ -37,6 +37,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* {console.log("inside App")} */}
       <div className="app-carousel">
         {images.map((item, index) => (
           <img
@@ -52,16 +53,19 @@ function App() {
           <button
             className="left-btn"
             onClick={() => {
+              // console.log("inside left btn")
               changeImagesRef(-1);
             }}
           >
             {"<"}
           </button>
+          
         ) : null}
         {currentIndex < images.length - 1 ? (
           <button
             className="right-btn"
             onClick={() => {
+              // console.log("inside right btn")
               changeImagesRef(+1);
             }}
           >
