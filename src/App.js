@@ -24,7 +24,7 @@ function App() {
   }, [images, currentIndex]);
 
   const changeImagesRef = (x) => {
-    console.log("inside changeImages", currentIndex + x);
+    // console.log("inside changeImages", currentIndex + x);
     const imgs = images;
     for (let i = 0; i < imgs.length; i++) {
       if (i !== currentIndex + x) {
